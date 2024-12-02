@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      PROVA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header><h1><strong>Log In</strong></h1></ion-card-header>
+      <ion-item>
+        <ion-label position="stacked"><h1>Email:</h1></ion-label>
+        <ion-input clearInput [(ngModel)]="email">   </ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="stacked"><h1>Senha:</h1></ion-label>
+        <ion-input clearInput [(ngModel)]="senha">   </ion-input>
+      </ion-item>
+      <br>
+        <ion-button shape="outline" expand="full" (click)="Logar()">Log In</ion-button>
+      <br>
+      <p id="pp">Não Possui uma conta? Crie Uma:</p>
+      <br>
+        <ion-button routerLink="/cadastro" shape="outline" expand="full">Cadastrar</ion-button>
+      <br>
+    </ion-card>
+  </div>
+</ion-content>
