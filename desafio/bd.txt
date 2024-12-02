@@ -1,0 +1,36 @@
+DROP SCHEMA IF EXISTS prjDesafio;
+CREATE SCHEMA prjDesafio;
+USE prjDesafio;
+
+CREATE TABLE alunos (
+  cd_aluno int AUTO_INCREMENT,
+  nm_aluno varchar(250),
+  ds_email varchar(250),
+  CONSTRAINT pk_aluno PRIMARY KEY (cd_aluno)
+);
+
+INSERT INTO alunos VALUES (null, 'João', 'joaotester@deus.com');
+INSERT INTO alunos VALUES (null, 'Karla', 'karlota@piranha.com');
+INSERT INTO alunos VALUES (null, 'Juliana', 'jujuba@sla.com');
+INSERT INTO alunos VALUES (null, 'Yzabelle', 'yzagamer@teste.com');
+INSERT INTO alunos VALUES (null, 'Luan', 'luangameplays@teste.com');
+
+INSERT INTO alunos VALUES (null, 'Mari', 'marilinda@gmail.com');
+INSERT INTO alunos VALUES (null, 'Amanda', 'amandinha@piranha.com');
+INSERT INTO alunos VALUES (null, 'Bernardo', 'bernas@sla.com');
+INSERT INTO alunos VALUES (null, 'Heitor', 'heitorzinho@teste.com');
+INSERT INTO alunos VALUES (null, 'Giovanna', 'giozinha@teste.com');
+
+INSERT INTO alunos VALUES (null, 'Felipe', 'felps@games.com');
+INSERT INTO alunos VALUES (null, 'Pietra', 'piepie@piranha.com');
+INSERT INTO alunos VALUES (null, 'Luiza', 'luzinha@sla.com');
+INSERT INTO alunos VALUES (null, 'Henrique', 'rique@teste.com');
+INSERT INTO alunos VALUES (null, 'Gabriel', 'gabsgameplays@teste.com');
+
+INSERT INTO alunos VALUES (null, 'Vitor', 'vitao@games.com');
+INSERT INTO alunos VALUES (null, 'Camila', 'camis@piranha.com');
+INSERT INTO alunos VALUES (null, 'Lucas', 'luquinhas@sla.com');
+INSERT INTO alunos VALUES (null, 'Livia', 'livinha@teste.com');
+INSERT INTO alunos VALUES (null, 'Sophia', 'sophs@teste.com');
+
+SELECT * FROM alunos LIMIT 5;
