@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back-outline" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title> Receba </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item *ngFor="let item of lista; let i = index">
+      <h3> ID: {{ item.id }} </h3>
+    </ion-item>
+
+    <ion-item *ngFor="let item of lista; let i = index">
+      <h3> Nome: {{ item.nome }} </h3>
+    </ion-item>
+
+    <ion-item *ngFor="let item of lista; let i = index">
+      <h3> Email: {{ item.email }} </h3>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
